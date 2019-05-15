@@ -1,2 +1,8 @@
+@import 'reset';
+@import 'base';
+@import 'palette';
+@import 'fonts';
 @import 'media-queries';
-@import 'components/header/index.scss';
+// content
+@import 'components/header/index';
+@import 'components/slider/index';

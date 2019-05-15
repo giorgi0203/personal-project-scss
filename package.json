@@ -6,7 +6,7 @@
   "author": "Andrii Mulyk <amulyk@lectrum.io>",
   "license": "MIT",
   "scripts": {
-    "server": "light-server -s ./dist/",
+    "server": "light-server -s ./dist/ -w dist/css/*.css,dist/*.html # # reload ./dist/",
     "lint:css": "stylelint \"./source/styles/**/*.scss\" --syntax scss",
     "lint:html": "htmllint \"./source/*.html\"",
     "lint": "yarn lint:css & yarn lint:html",

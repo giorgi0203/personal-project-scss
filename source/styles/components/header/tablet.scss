@@ -1,3 +1,47 @@
 .header {
-    background: green;
+
+    & > .wrap {
+        justify-content: space-between;
+
+        .logo {
+            margin-left: 26px;
+        }
+
+        nav {
+            margin-right: 26px;
+            margin-left: 0;
+
+            ul {
+                display: none;
+            }
+
+            div {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 56px;
+                height: 39px;
+                background-color: $color-3;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 48px;
+                    height: 31px;
+                    border: 2px solid $color-2;
+                }
+
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    margin-top: 3px;
+                    background-color: $color-2;
+                }
+            }
+        }
+    }
 }
