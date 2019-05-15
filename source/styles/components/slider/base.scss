@@ -14,21 +14,52 @@
 
         .content {
 
+            .text {
+                font-family: $ral;
+
+                & .head-ral-e-lgh {
+                    color: $color-2;
+                    font-family: $ral;
+                    font-size: 62px;
+                    font-weight: 200;
+                }
+
+                & .head-mon {
+                    color: $color-2;
+                    font-family: $mon;
+                    font-size: 74px;
+                    font-weight: 700;
+                }
+
+                & .head-ral-lgh {
+                    color: $color-2;
+                    font-family: $ral;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+
             .btn {
-                display: block;
+                display: flex;
                 position: relative;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 width: 144px;
                 height: 44px;
                 background-color: $color-3;
+                color: $color-2;
+                font-family: $ral;
+                font-weight: 700;
                 text-align: center;
 
                 &::before {
                     content: '';
                     display: block;
                     position: absolute;
-                    width: 144px;
-                    height: 44px;
-                    border: 2px solid $color-2;
+                    width: 135px;
+                    height: 35px;
+                    border: 1px solid $color-2;
                 }
             }
         }
