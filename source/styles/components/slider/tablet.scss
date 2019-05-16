@@ -12,6 +12,39 @@
         height: 100%;
         text-align: center;
 
+        .content {
+
+            .text {
+                margin-bottom: 44px;
+                font-family: $ral;
+
+                & .head-ral-e-lgh {
+                    color: $color-2;
+                    font-family: $ral;
+                    font-size: 58.81px;
+                    font-weight: 200;
+                }
+
+                & .head-mon {
+                    color: $color-2;
+                    font-family: $mon;
+                    font-size: 77.07px;
+                    font-weight: 700;
+                }
+
+                & .head-ral-lgh {
+                    color: $color-2;
+                    font-family: $ral;
+                    font-size: 18.94px;
+                    font-weight: 300;
+                }
+            }
+
+            .btn {
+                transform: translate(0);
+            }
+        }
+
         .buttons {
             display: none;
         }
