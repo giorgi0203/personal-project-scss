@@ -107,6 +107,10 @@
                         width: 100%;
                         font-family: $sans;
 
+                        .mobile-text {
+                            display: none;
+                        }
+
                         h2 {
                             display: none;
                         }

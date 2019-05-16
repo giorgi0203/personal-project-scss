@@ -1,9 +1,29 @@
 .about {
-    padding-top: 116px;
+    padding-top: 39px;
 
     .wrap {
         display: flex;
         flex-direction: column;
+
+        & > .head {
+            padding-bottom: 35px;
+
+            h2 {
+                margin-bottom: 11px;
+                transform: translateX(0);
+                font-family: $ral;
+                font-size: 27px;
+                font-weight: 600;
+
+                span.green {
+                    color: $color-3;
+                }
+            }
+
+            .icon {
+                transform: translateX(0);
+            }
+        }
 
         & .content {
             display: none;
@@ -18,6 +38,7 @@
                 width: 280px;
                 height: 207px;
                 margin-right: 0;
+                margin-bottom: 19px;
             }
 
             .img::before {
@@ -33,18 +54,25 @@
                 width: 280px;
 
                 h1 {
-                    margin-bottom: 23px;
+                    padding-bottom: 12px;
+                    border-bottom: solid $color-8 1px;
                     font-family: $ral;
-                    font-size: 31px;
+                    font-size: 16px;
                     font-weight: 600;
-                    word-spacing: -4.8px;
+                    word-spacing: -2.8px;
                 }
 
                 p {
+                    display: none;
                     margin-bottom: 47px;
+                    padding-top: 9px;
                     font-family: $sans;
-                    font-size: 14px;
+                    font-size: 13px;
                     line-height: 27px;
+                }
+
+                .mobile-text {
+                    display: block;
                 }
 
                 & .list {
@@ -60,8 +88,13 @@
                         }
 
                         p {
+                            display: none;
                             padding-left: 40px;
                             font-size: 13px;
+                        }
+
+                        .mobile-text {
+                            display: block;
                         }
 
                         p:first-child {
@@ -73,7 +106,7 @@
                             display: block;
                             width: 16px;
                             height: 16px;
-                            margin-right: 27px;
+                            margin-right: 10px;
                             float: left;
                             background-color: $color-2;
                             background-image: url(../../../images/about/Check-Icon.png);

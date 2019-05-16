@@ -56,6 +56,23 @@
 
         & .content-tablet-mobile {
             display: none;
+
+            .btn {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 138px;
+                height: 42px;
+                margin-top: 21px;
+                background-color: $color-3;
+                color: $color-2;
+                font-family: $ral;
+                font-size: 13px;
+                font-weight: 700;
+                text-align: center;
+            }
         }
 
         & .content {
@@ -106,6 +123,10 @@
                         height: 89.71px;
                         margin-bottom: 35px;
                         font-family: $sans;
+
+                        .mobile-text {
+                            display: none;
+                        }
 
                         p {
                             margin-bottom: 47px;
