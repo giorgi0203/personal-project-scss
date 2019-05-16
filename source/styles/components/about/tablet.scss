@@ -1,5 +1,5 @@
 .about {
-    padding-top: 116px;
+    padding-top: 74px;
 
     .wrap {
         display: flex;
@@ -7,6 +7,55 @@
 
         & .content {
             display: none;
+        }
+
+        & .head {
+            margin: 0 auto;
+            padding-bottom: 59px;
+
+            h2 {
+                margin-bottom: 15px;
+                transform: translateX(0);
+                font-family: $ral;
+                font-size: 28.88px;
+                font-weight: 600;
+
+                span.green {
+                    color: $color-3;
+                }
+            }
+
+            & .icon {
+                position: relative;
+                width: 16px;
+                height: 17px;
+                margin: 0 auto;
+                transform: translateX(0);
+                background-image: url(../../../images/about/Speak-Icon.png);
+                background-size: cover;
+            }
+
+            & .icon::after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                right: -44px;
+                bottom: 6px;
+                width: 37px;
+                height: 1.1px;
+                background-color: $color-5;
+            }
+
+            & .icon::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                bottom: 6px;
+                left: -48px;
+                width: 37px;
+                height: 1.1px;
+                background-color: $color-5;
+            }
         }
 
         & .content-tablet-mobile {
@@ -31,20 +80,23 @@
 
             & .info {
                 width: 718px;
+                padding-top: 29px;
 
                 h1 {
-                    margin-bottom: 23px;
+                    margin-bottom: 17px;
+                    padding-bottom: 20px;
+                    border-bottom: solid $color-8 1px;
                     font-family: $ral;
-                    font-size: 31px;
+                    font-size: 25px;
                     font-weight: 600;
                     word-spacing: -4.8px;
                 }
 
-                p {
-                    margin-bottom: 47px;
+                & > p {
+                    margin-bottom: 38px;
                     font-family: $sans;
-                    font-size: 14px;
-                    line-height: 27px;
+                    font-size: 13px;
+                    line-height: 23px;
                 }
 
                 & .list {
@@ -60,12 +112,11 @@
                         }
 
                         p {
-                            padding-left: 40px;
+                            margin-bottom: 23px;
+                            padding-right: 160px;
+                            padding-left: 31px;
                             font-size: 13px;
-                        }
-
-                        p:first-child {
-                            padding-left: 0;
+                            line-height: 21px;
                         }
 
                         &::before {
@@ -73,7 +124,7 @@
                             display: block;
                             width: 16px;
                             height: 16px;
-                            margin-right: 27px;
+                            margin-right: 15px;
                             float: left;
                             background-color: $color-2;
                             background-image: url(../../../images/about/Check-Icon.png);

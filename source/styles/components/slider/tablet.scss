@@ -1,6 +1,6 @@
 .slider {
     width: 100%;
-    height: 760px;
+    height: 593px;
     background-color: $color-4;
 
     .wrap {
@@ -13,9 +13,11 @@
         text-align: center;
 
         .content {
+            padding-top: 158px;
 
             .text {
-                margin-bottom: 44px;
+                margin-bottom: 38px;
+                padding-left: 0;
                 font-family: $ral;
 
                 & .head-ral-e-lgh {
@@ -26,6 +28,7 @@
                 }
 
                 & .head-mon {
+                    margin-bottom: 16px;
                     color: $color-2;
                     font-family: $mon;
                     font-size: 77.07px;

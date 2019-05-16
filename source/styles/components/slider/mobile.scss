@@ -13,9 +13,10 @@
         text-align: center;
 
         .content {
+            padding-top: 48px;
 
             .text {
-                margin-bottom: 44px;
+                margin-bottom: 0;
                 font-family: $ral;
 
                 & .head-ral-e-lgh {
@@ -41,7 +42,19 @@
             }
 
             .btn {
+                width: 64px;
+                height: 19px;
                 transform: translateX(0);
+                font-size: 7px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 55px;
+                    height: 10px;
+                    border: 1px solid $color-2;
+                }
             }
         }
 

@@ -1,14 +1,31 @@
 .header {
+    height: 67px;
 
     & > .wrap {
         justify-content: space-between;
+        width: 100%;
+        padding: 0 3px;
 
-        .logo {
-            margin-left: 26px;
+        & > a {
+            padding-left: 18px;
+            font-family: $ral;
+            font-size: 27.22px;
+            font-weight: 300;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 31px;
+                margin-right: -8px;
+                background-image: url(../../../images/header/logo-p.png);
+                background-size: cover;
+                vertical-align: baseline;
+            }
         }
 
         nav {
-            margin-right: 26px;
+            margin-right: 0;
             margin-left: 0;
 
             ul {
@@ -21,24 +38,26 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 56px;
-                height: 39px;
+                width: 48px;
+                height: 31px;
+                transform: translateX(7px);
                 background-color: $color-3;
 
                 &::before {
                     content: '';
                     display: block;
                     position: absolute;
-                    width: 48px;
-                    height: 31px;
+                    width: 40px;
+                    height: 23px;
                     border: 2px solid $color-2;
                 }
 
                 span {
                     display: block;
-                    width: 30px;
+                    width: 22px;
                     height: 2px;
                     margin-top: 3px;
+                    margin-left: -2px;
                     background-color: $color-2;
                 }
             }
