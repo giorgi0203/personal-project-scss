@@ -1,2 +1,10 @@
 .header {
+
+    & > .wrap {
+        width: 100%;
+
+        nav {
+            margin-right: 0;
+        }
+    }
 }

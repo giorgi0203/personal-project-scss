@@ -10,47 +10,40 @@
             padding-bottom: 96px;
 
             h2 {
-                margin-bottom: 13px;
+                padding-bottom: 29px;
                 transform: translateX(10px);
                 font-family: $ral;
                 font-size: 31px;
                 font-weight: 600;
 
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    right: 52px;
+                    bottom: 5px;
+                    width: 108px;
+                    height: 1.1px;
+                    background-color: $color-5;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 35px;
+                    right: 88px;
+                    width: 16px;
+                    height: 17px;
+                    margin: 0 auto;
+                    border: 9px solid $color-2;
+                    background-color: $color-2;
+                    background-image: url(/images/about/speak-icon.png);
+                    background-size: cover;
+                }
+
                 span.green {
                     color: $color-3;
                 }
-            }
-
-            & .icon {
-                position: relative;
-                width: 16px;
-                height: 17px;
-                margin: 0 auto;
-                transform: translateX(10px);
-                background-image: url(../../../images/about/Speak-Icon.png);
-                background-size: cover;
-            }
-
-            & .icon::after {
-                content: '';
-                display: inline-block;
-                position: absolute;
-                right: -44px;
-                bottom: 6px;
-                width: 37px;
-                height: 1.1px;
-                background-color: $color-5;
-            }
-
-            & .icon::before {
-                content: '';
-                display: inline-block;
-                position: absolute;
-                bottom: 6px;
-                left: -48px;
-                width: 37px;
-                height: 1.1px;
-                background-color: $color-5;
             }
         }
 
@@ -121,7 +114,7 @@
                     & .card {
                         width: 275.5px;
                         height: 89.71px;
-                        margin-bottom: 35px;
+                        margin-bottom: 37px;
                         font-family: $sans;
 
                         .mobile-text {
@@ -156,25 +149,22 @@
                             float: left;
                             border-radius: 50%;
                             background-color: $color-6;
-                            // background-image: url(../../../images/about/feat-icon.png);
                             background-repeat: no-repeat;
                             background-position: center;
                         }
 
-                        &.feat::before {
-                            background-image: url(../../../images/about/feat-icon.png);
-                        }
+                        $images: (
+                            'feat':'feat-icon.png',
+                            'location':'location-icon.png',
+                            'favorite':'heart-icon.png',
+                            'edit':'edit-icon.png',
+                        );
 
-                        &.location::before {
-                            background-image: url(../../../images/about/location-icon.png);
-                        }
+                        @each $key,$value in $images {
 
-                        &.favorite::before {
-                            background-image: url(../../../images/about/heart-icon.png);
-                        }
-
-                        &.edit::before {
-                            background-image: url(../../../images/about/edit-icon.png);
+                            &.#{$key}::before {
+                                background-image: url(/images/about/#{$value});
+                            }
                         }
                     }
                 }

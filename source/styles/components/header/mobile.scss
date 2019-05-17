@@ -8,9 +8,7 @@
 
         & > a {
             padding-left: 18px;
-            font-family: $ral;
             font-size: 27.22px;
-            font-weight: 300;
 
             &::before {
                 content: '';
@@ -18,7 +16,7 @@
                 width: 20px;
                 height: 31px;
                 margin-right: -8px;
-                background-image: url(../../../images/header/logo-p.png);
+                background-image: url(/images/header/logo-p.png);
                 background-size: cover;
                 vertical-align: baseline;
             }
