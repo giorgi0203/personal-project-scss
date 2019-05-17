@@ -99,6 +99,10 @@
                     line-height: 23px;
                 }
 
+                & > .mobile-text {
+                    display: none;
+                }
+
                 & .list {
                     display: flex;
                     flex-direction: column;
